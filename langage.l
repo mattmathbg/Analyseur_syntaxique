@@ -4,10 +4,10 @@
 %}
 
 %%
-"si"            { return SI; }
-"sinon"         { return SINON; }
-"tant_que"      { return TANT_QUE; }
-"afficher"      { return AFFICHER; }
+"如果"          { return SI; }          /* si */
+"否则"          { return SINON; }       /* sinon */
+"当"            { return TANT_QUE; }    /* tant_que */
+"输出"          { return AFFICHER; }    /* afficher */
 [a-zA-Z_]+      { return IDENT; }       /* Pour les noms de variables */
 [0-9]+          { return NOMBRE; }      /* Pour les nombres entiers */
 "=="            { return EGAL_EGAL; }
