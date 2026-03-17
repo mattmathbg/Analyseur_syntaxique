@@ -1594,10 +1594,10 @@ void yyerror(const char *s) {
 }
 
 int main() {
-    printf("--- Analyseur Syntaxique 'Français' ---\n");
-    printf("Entrez votre code (Faites Ctrl+D sur Linux/Mac ou Ctrl+Z sur Windows pour terminer) :\n");
+    printf("--- Analyseur Syntaxique 'Chinois' ---\n");
+    printf("Entrez votre code (Faites Ctrl+C sur Windows pour terminer) :\n");
     if (yyparse() == 0) {
-        printf("=> BRAVO ! Analyse terminée avec succès. Syntaxe correcte.\n");
+        printf("=> BRAVO ! Analyse terminée avec succès. Syntaxe correcte. 忆茹把你\n");
     }
     return 0;
 }
