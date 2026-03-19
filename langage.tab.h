@@ -39,32 +39,48 @@
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
-     SI = 258,
-     SINON = 259,
-     TANT_QUE = 260,
-     AFFICHER = 261,
-     IDENT = 262,
-     NOMBRE = 263,
+     NOMBRE = 258,
+     IDENT = 259,
+     SI = 260,
+     SINON = 261,
+     TANT_QUE = 262,
+     AFFICHER = 263,
      EGAL_EGAL = 264,
-     EGAL = 265,
-     PLUS = 266,
-     MOINS = 267,
-     MULT = 268,
-     DIV = 269,
-     SUP = 270,
-     INF = 271,
-     PAR_G = 272,
-     PAR_D = 273,
-     ACC_G = 274,
-     ACC_D = 275,
-     POINT_VIRGULE = 276
+     DIFF = 265,
+     INF_EGAL = 266,
+     SUP_EGAL = 267,
+     EGAL = 268,
+     PLUS = 269,
+     MOINS = 270,
+     MULT = 271,
+     DIV = 272,
+     SUP = 273,
+     INF = 274,
+     PAR_G = 275,
+     PAR_D = 276,
+     ACC_G = 277,
+     ACC_D = 278,
+     POINT_VIRGULE = 279
    };
 #endif
 
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+typedef union YYSTYPE
+{
+
+/* Line 1676 of yacc.c  */
+#line 9 ".\\langage.y"
+
+    char* chaine;
+    int entier;
+
+
+
+/* Line 1676 of yacc.c  */
+#line 83 "langage.tab.h"
+} YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
